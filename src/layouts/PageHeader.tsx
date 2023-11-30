@@ -1,5 +1,6 @@
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react"
-import logo from "../assets/Logo.png"
+// import logo from "../assets/youtube.png"
+import logo from "/icon.png"
 import { Button } from "../components/Button"
 import { useState } from "react"
 import { useSidebarContext } from "../contexts/SidebarContext"
@@ -84,13 +85,15 @@ export function PageHeaderFirstSection({
       className={`gap-4 items-center flex-shrink-0 ${
         hidden ? "hidden" : "flex"
       }`}
+      // style={{ backgroundColor: 'pink' }}
     >
       <Button onClick={toggle} variant="ghost" size="icon">
         <Menu />
       </Button>
-      <a href="/">
+      <div className="flex items-center gap-2">
         <img src={logo} className="h-6" />
-      </a>
+        <span>YouTube</span>
+      </div>
     </div>
   )
 }
