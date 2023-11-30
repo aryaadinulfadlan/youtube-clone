@@ -92,7 +92,7 @@ export function PageHeaderFirstSection({
       </Button>
       <div className="flex items-center gap-2">
         <img src={logo} className="h-6" />
-        <span>YouTube</span>
+        <span>AryaTube</span>
       </div>
     </div>
   )
